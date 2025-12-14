@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio 🌻🦋</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Zhi+Mang+Xing&family=Noto+Serif+SC:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <h2 class="logo">My Portfolio 🌻🦋</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="section home">
+  <h1>Hello, I'm <span>Kavindi</span></h1>
+  <p>Computer Science Student | Aspiring Developer</p>
+  <button onclick="scrollToContact()">Contact Me</button>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <h2>About Me 🌻</h2>
+
+  <div class="about-container">
+    <div class="about-box">
+      <p><strong>Name:</strong> M.K. Wijesinghe</p>
+      <p><strong>Date of Birth:</strong> 28 / 08 / 2000</p>
+      <p><strong>Address:</strong> No. 68/1 A, Ambagaspitiya</p>
+      <p><strong>📧 Email:</strong> kavindiwije@email.com</p>
+      <p><strong>📞 Contact:</strong> 072-5171300</p>
+      <p><strong>👩🏻‍🎓 Campus:</strong> Saegis Campus</p>
+    </div>
+
+    <div class="about-photo">
+      <img src="My.jpg" alt="My Photo">
+    </div>
+  </div>
+
+  <div class="about-description">
+    <p>
+      I am an on-campus student pursuing a computer science degree.
+      Currently learning Java, Web Technologies, Networking, Software Engineering,
+      and I enjoy building creative and user-friendly websites.
+    </p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section light">
+  <h2>Skills</h2>
+  <ul class="skills-list">
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript</li>
+    <li>Java</li>
+    <li>Git & GitHub</li>
+    <li>Basic Networking</li>
+  </ul>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <h3>Student Management System</h3>
+    <p>Java-based system to manage student details.</p>
+    <a href="#">GitHub</a>
+  </div>
+
+  <div class="project">
+    <h3>Network Design Assignment</h3>
+    <p>Campus network using VLSM & Cisco Packet Tracer.</p>
+    <a href="#">View Project</a>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section light">
+  <h2>Contact Me</h2>
+
+  <form id="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required>
+    <input type="email" name="from_email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="success"></p>
+</section>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
